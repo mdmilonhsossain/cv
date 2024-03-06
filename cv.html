@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      list-style: none;
+    }
+    body{
+      background-color: lightblue;
+    }
+    .container{
+      margin: 1px auto;
+      width: 868px;
+      display: flex;
+      box-shadow: 1px 5px 5px rgb(241, 237, 237);
+    }
+    .container .left{
+      padding: 0 0 0 4px;
+      background-color: rgba(168, 172, 175, 0.767); 
+    }
+    .container .right{
+      background-color: lightcyan;
+    }
+    .profile{
+      padding: 5px 1px 20px 1px;
+    }
+    .pofile-img img{
+      height: 100px ;
+      width: 100px;
+      border-radius: 50%;
+    }
+    /*========================================*/
+    .contac{
+      padding: 5px 1px 20px 1px;
+    }
+    .contac ul{
+      list-style: none;
+    }
+    .contac ul li{
+     display: flex;
+     padding: 5px 2px;
+    }
+    .contac ul li span{
+     margin: 1px 1px;
+    }
+    .contac ul li span{
+     margin: 0px 5px 0 0;
+    }
+    /*===================================*/
+    .education{
+      padding: 5px 1px 20px 1px;
+    }
+    .education ul li{
+      padding: 5px 1px;
+    }
+    /*====================================*/
+    .lagguege{
+      padding: 5px 1px 20px 1px;
+    }
+    .lagguege ul li{
+      display: flex;
+      flex-direction: column;
+      padding: 2px 1px;
+    
+    }
+    /*=====================================*/
+
+    /*===============right=====================*/
+    .about{
+      padding: 4px 2px;
+    }
+    .about h2{
+      padding: 6px 0;
+    }
+
+    .mr{
+      margin-right: 8px;
+    }
+    .companyy{
+      display: flex;
+    }
+
+.skill{
+  
+}
+
+
+.skills{
+  display: grid;
+  grid-template-columns: 100px 1fr 50px;
+  align-items: center;
+ 
+}
+
+    /*===================progress desigen==================*/
+    .skills-d{
+      height: 15px ;
+      width: 100%;
+      border-radius: 10px ;
+      background-color: rgba(153, 153, 153, 0.945);
+      position: relative;
+      margin:10px;
+
+    }
+    .skills-d::before{
+      height: 100%;
+      width: 100%;
+      border-radius: 10px ;
+      background-color: rgb(50, 139, 212);
+      display: block;
+      position: absolute;
+      content: '';
+      padding-left: 10px;
+    }
+    .skills-html::before{
+      width: 95%;
+      content: '95%';
+    }
+    .skills-css::before{
+      width: 80%;
+      content: ' 80% ';
+    }
+    .skills-boots::before{
+      width: 70%;
+      content: '70% ';
+    }
+    .skills-js::before{
+      width: 60%;
+      content: '60% ';
+    }
+    .skills-ps::before{
+      width: 90%;
+      content: '90% ';
+    }
+    
+    /*=====================================*/
+    .intarest{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+     
+    }
+    .intarest h4{ 
+    padding: 5px 10px 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+    /*=====================================*/
+    /*=====================================*/
+    /*=====================================*/
+  </style>
+</head>
+<body>
+ 
+
+  <div class="container">
+      <div class="left">
+
+        <header>
+          <div class="profile">
+            <div class="pofile-img">
+              <img src="/img/milon2.jpg" alt="">
+            </div>
+            <h2>md milon hossain </h2><b>developar</b>
+          </div>
+        </header>
+
+        <div class="contac">
+          <h3>contac information</h3>
+          <ul>
+            <li>
+              <span class="icon">
+                
+                <i class="fa fa-phone"></i>
+              </span>
+              <span class="text">01840-389266</span>
+            </li>
+            <li>
+              <span class="icon">
+                <i class="fa fa-envelope"></i>
+
+              </span>
+              <span class="text">mdmilonhossain0910@gmail.com</span>
+            </li>
+            <li>
+              <span class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span class="text">facebook.com/mdmilonhossainnil</span>
+            </li>
+            <li>
+              <span class="icon">
+                <i class="fa fa-map-marker"></i>
+              </span>
+              <span class="text">shahzadpur, sirajgonj</span>
+            </li>
+            <li>
+              <span class="icon"></span>
+              <span class="text"></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="education">
+          <h3>education</h3>
+          <ul>
+            <li>
+              <h5>2014-2019</h5>
+              <h4>charnarina high school</h4>
+              <h4>ssc</h4>
+            </li>
+            <li>
+              <h5>2020-2023</h5>
+              <h4>tangail polytechnic instituet</h4>
+              <h4>conputer science and engineering</h4>
+            </li>
+
+            <li>
+              <h5>2020-present</h5>
+              <h4>tangail polytechnic instituet</h4>
+              <h4>conputer science and engineering</h4>
+            </li>
+           
+          </ul>
+        </div>
+        <div class="lagguege">
+          <h3>languages</h3>
+          <ul>
+            <li>
+             <span>english</span>
+             <span>bangla</span>
+             <span>arabic</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    <!-- lert end ======================= -->
+
+      <div class="right">
+
+        <div class="about">
+          <h2>profile</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ducimus eveniet autem explicabo! Harum libero recusandae veritatis maiores aliquam fugit impedit esse quos in? Doloremque vel, provident in pariatur a ullam deserunt veniam. Voluptate voluptates a quod incidunt, eos quaerat nostrum quis tempora quam, amet magnam, quasi id odio! Consectetur.</p>
+        </div>
+        <div class="about">
+          <h2>expolore</h2>
+          <div class="companyy">
+            <div class="company mr">
+              <h4>2019-2021</h4>
+              <h5>company name:</h5>
+            </div>
+            <div class="company-pepole mr">
+              <h4>senior wev developar</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nam architecto et odio beatae repellendus repudiandae, minima incidunt provident perspiciatis amet illo harum pariatur nulla ratione quis deleniti? Maxime, sed.</p>
+            </div>
+          </div>
+          <div class="companyy">
+            <div class="company mr">
+              <h4>2019-2021</h4>
+              <h5>company name:</h5>
+            </div>
+            <div class="company-pepole mr">
+              <h4>senior wev developar</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nam architecto et odio beatae repellendus repudiandae, minima incidunt provident perspiciatis amet illo harum pariatur nulla ratione quis deleniti? Maxime, sed.</p>
+            </div>
+          </div>
+          
+        </div>
+
+
+        <div class="about skill">
+          <h2>profetional skill</h2>
+
+         <div class="skills">
+            <h4>html</h4>
+            <div class="skills-d skills-html"></div>
+          </div>
+
+         <div class="skills">
+            <h4>css</h4>
+            <div class="skills-d skills-css"></div>
+          </div>
+
+         <div class="skills">
+            <h4>bootstrap</h4>
+            <div class="skills-d skills-boots"></div>
+          </div>
+         <div class="skills">
+            <h4>javascripts</h4>
+            <div class="skills-d skills-js"></div>
+          </div>
+         <div class="skills">
+            <h4>photoshop</h4>
+            <div class="skills-d skills-ps"></div>
+          </div>
+          
+        </div>
+        <div class="about">
+          <h2> intarested</h2>
+          <div class="intarest">
+            <h4> 
+             <span><i class="fa fa-code" aria-hidden="true"></i></span> <b>wev design</b>
+            </h4>
+            <h4> 
+             <span> <i class="fa fa-code-fork" aria-hidden="true"></i> </span> <b>wev design</b>
+            </h4>
+            <h4> 
+             <span> <i class="fa fa-code-fork" aria-hidden="true"></i> </span> <b>wev design</b>
+            </h4>
+            <h4> 
+             <span><i class="fa fa-address-book" aria-hidden="true"></i></span> <b>wev design</b>
+            </h4>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
